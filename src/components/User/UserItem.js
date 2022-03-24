@@ -56,7 +56,7 @@ const UserItem = (props) => {
             src={props.avatar}
             alt={props.name}
             onMouseEnter={mouseHoverHandler}
-            // onMouseLeave={mouseLeavehandler}
+            onMouseLeave={mouseLeavehandler}
           />
           <NameStyle>
             <h4>{props.name}</h4>

@@ -6,12 +6,6 @@ const UserInfoStyle = styled.div`
   align-items: center;
   justify-content: center;
 
-  & img {
-    border-radius: 50%;
-    width: 6rem;
-    margin-bottom: 3px;
-  }
-
   & .name {
     margin-bottom: 6px;
   }

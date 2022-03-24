@@ -6,7 +6,6 @@ const UserInfo = () => {
   return (
     <>
       <UserInfoStyle>
-        <img src={userDetails.avatar} alt={userDetails.name} />
         <p className="name">
           {userDetails.name}
           <span className="active">&#729;</span>

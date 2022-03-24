@@ -1,7 +1,7 @@
 import React from "react";
-import Main from "./components/Main/Main";
+import UserListContainer from "./container/UserListContainer";
 function App() {
-  return <Main />;
+  return <UserListContainer />;
 }
 
 export default App;

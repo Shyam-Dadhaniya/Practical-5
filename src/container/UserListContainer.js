@@ -1,10 +1,10 @@
 import React from "react";
-import MainStyle from "../../styled/Main.styles";
-import Header from "../Header/Header";
-import UserList from "../User/UserList";
-import UserCard from "../UserCard/UserCard";
+import MainStyle from "../styled/Main.styles";
+import Header from "../components/Header/Header";
+import UserList from "../components/User/UserList";
+import UserCard from "../components/UserCard/UserCard";
 import { useSelector } from "react-redux";
-const Main = () => {
+const UserListContainer = () => {
   const user = useSelector((state) => state.card.user);
   return (
     <MainStyle>
@@ -19,4 +19,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default UserListContainer;

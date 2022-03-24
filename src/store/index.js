@@ -1,20 +1,5 @@
-import { createSlice, configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import userCardSlice from "./userCardSlice";
 
-const UserCardSlice = createSlice({
-  name: "userCard",
-  initialState: {
-    user: null,
-  },
-  reducers: {
-    setUser(state, action) {
-      state.user = action.payload;
-    },
-    removeUser(state) {
-      state.user = null;
-    },
-  },
-});
-
-export const cardActions = UserCardSlice.actions;
-const store = configureStore({ reducer: { card: UserCardSlice.reducer } });
+const store = configureStore({ reducer: { card: userCardSlice } });
 export default store;

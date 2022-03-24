@@ -6,7 +6,7 @@ import NameStyle from "../../styled/list/Name.style";
 import AvatarStyle from "../../styled/list/Avatar.style";
 import DropDown from "../../styled/list/DropDown.style";
 import { useDispatch } from "react-redux";
-import { cardActions } from "../../store";
+import { cardActions } from "../../store/userCardSlice";
 const UserItem = (props) => {
   const dispatch = useDispatch();
 
